@@ -1,0 +1,17 @@
+<h1>Pictures</h1>
+
+<%= link_to "Free pictures only", pictures_path(:free => "yes") %>
+
+<% @pictures.each do |picture| %>
+
+	<h2><%= picture.title %></h2>
+
+	<h3><%= picture.artist %></h3>
+	
+
+	<%= link_to picture_path(picture) do %>
+	<%= image_tag picture.url %>
+	<% end %>
+
+<% end %>
+
