@@ -6,10 +6,12 @@
 	</p>
 	<p>
 		<label>Title</label><br>
+		<%= @picture.errors[:title].join(",") %>
 		<%= f.text_field "title" %>
 	</p>
 	<p>
 		<lable>URL</label><br>
+		<%= @picture.errors[:url].join(",") %>
 		<%= f.text_field "url" %>
 	</p>
 	<p>
@@ -19,6 +21,5 @@
 	<p>
 		<%= f.submit "Save" %>
 	</p>
-
 
 <% end %>
