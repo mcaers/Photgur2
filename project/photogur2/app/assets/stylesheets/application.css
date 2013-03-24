@@ -11,3 +11,82 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background-color: #DBD7D9;
+}
+
+
+img {
+	width: 500px;
+	height: 400px;
+	background: #e8eae9;
+  	border: 1px solid #c6c9cc;
+  	margin: 8px 0 0 20px;
+  	padding: 4px;
+
+}
+
+.nav {
+	margin-top: 0px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: black;
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0 auto;
+
+}
+
+.nav ul li {
+	color: white;
+	display: inline;
+	list-style-type: none;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	
+}
+a:hover {
+	color: blue;
+}
+
+.clear {
+	clear: both;
+}
+
+.errors {
+	color: red;
+}
+
+.field_with_errors input {
+	border: 1px solid red;
+}
+.error {
+	color: red;
+}
+
+.message {
+	color: red;
+}
+
+h1 {
+	font-family: 'Special Elite', cursive;
+}
+
+h2 {
+	font-family: 'Special Elite', cursive;
+}
+
+h3 {
+	font-family: 'Special Elite', cursive;
+}

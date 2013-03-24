@@ -1,6 +1,6 @@
-
+<div id="wrapper" style="width:100%; text-align:center">
 <h1><%= @picture[:title] %></h1>
-	<h2><%= @picture[:artist] %></h2>
+	<h2>by <%= @picture[:artist] %></h2>
 	<%=button_to "Edit", edit_picture_path(@picture), :method => :get %>
 	<%=button_to "Delete", @picture, :method => :delete, :confirm => "Are you sure?"%>
 		<%if @picture.copyrighted %>
@@ -10,5 +10,5 @@
 		<% end %>
 
 	<img src="<%= @picture[:url] %>">
-
+</div>
 
